@@ -1,0 +1,8 @@
+.list-group {
+  padding: 0;
+  list-style: none;
+}
+
+.list-group-item {
+  color: blue;
+}

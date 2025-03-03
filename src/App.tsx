@@ -1,22 +1,14 @@
-import { useState } from "react";
-import Alert from "./components/Alert";
-import CustomButton from "./components/CustomButton";
-// App.tsx
-import "bootstrap/dist/css/bootstrap.min.css";
+import ListGroup from "./components/ListGroup";
 
 function App() {
-  const [clicked, toggleAlert] = useState(false);
-
+  const items = ["Japan", "Madrid", "Tokyo", "New Zealand"];
   return (
     <div>
-      {clicked && (
-        <Alert clicked={() => toggleAlert(false)}>
-          Hello <span>World</span>
-        </Alert>
-      )}
-      <CustomButton color="primary" onButtonClick={() => toggleAlert(true)}>
-        Click Me
-      </CustomButton>
+      <ListGroup
+        heading="Cities"
+        items={items}
+        onSelectItem={() => console.log("Clicked")}
+      ></ListGroup>
     </div>
   );
 }
