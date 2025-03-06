@@ -11,7 +11,7 @@ function App() {
         onSelectItem={() => console.log("Clicked")}
       ></ListGroup>
       <BsCircleFill/>
-      <Button text="Button" />
+      <Button text="My Button" />
     </div>
   );
 }

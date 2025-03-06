@@ -1,3 +1,4 @@
+import "./Button.css"
 
 interface Props{
     text: string;
@@ -5,8 +6,8 @@ interface Props{
 
 const Button = ({text}: Props) => {
   return (
-    <div>
-      <button>{text}</button>
+    <div >
+      <button className="button">{text}</button>
     </div>
   )
 }
