@@ -1,4 +1,5 @@
 import ListGroup from "./components/ListGroup";
+import { BsCircleFill } from "react-icons/bs";
 function App() {
   const items = ["Japan", "Madrid", "Tokyo", "New Zealand"];
   return (
@@ -8,6 +9,7 @@ function App() {
         items={items}
         onSelectItem={() => console.log("Clicked")}
       ></ListGroup>
+      <BsCircleFill/>
     </div>
   );
 }
